@@ -1,2 +1,24 @@
+//Mouvement
 Appliquer aux sols : un tag "Sol"
-Appliquer à tout : un objet physics2D (Assets -> Physics -> PhysicsMaterial2D) avec une friction à 0
+Box Collider2D au perso + tous les sols
+RigidBoody au perso
+Appliquer à les murs verticaux : un objet physics2D (Assets -> Physics -> PhysicsMaterial2D) avec une friction à 0
+
+//Multi joueur
+Ajouter "J1" ou "J2" en paramètre
+Réglage des contrôles : Edit -> Project Settings -> Input
+	DeplacementJ1 (clavier -> a, d)
+	DeplacementJ2 (clavier -> left, right)
+	SautJ1 (clavier -> w)
+	SautJ2 (clavier -> up)
+	DeplacementJ2 (manette)
+	SautJ2 (manette)
+
+//Camera multi
+Cam 1 : Y:0.5  H:0.5
+Cam 2 : Y:0  H:0.5
+Vérifier les deux caméra en projection orthographiques, réglage de la distance dans Size
+Appliquer le script Camera Controler sur une camera ainsi que sa target
+Si rien visible -> mettre le Z de offset à -1 dans le Camera Controler
+
+Boutons manette : http://wiki.unity3d.com/index.php?title=Xbox360Controller
