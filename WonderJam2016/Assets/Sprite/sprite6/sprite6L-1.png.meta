@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d7a41134471885940870f0dfe6d3ed69
 timeCreated: 1475881754
+=======
+guid: fbfd98b3937295b4fb783e960ac52b7a
+timeCreated: 1475885480
+>>>>>>> Sprite_Pack
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}

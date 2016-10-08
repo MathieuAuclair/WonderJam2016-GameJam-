@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 7a5c231521527bc49ae8600b67629e68
 folderAsset: yes
 timeCreated: 1475882155
+=======
+guid: d5e3259c7ed95b244b893b95817ef883
+folderAsset: yes
+timeCreated: 1475885518
+>>>>>>> Sprite_Pack
 licenseType: Free
 DefaultImporter:
   userData: 
