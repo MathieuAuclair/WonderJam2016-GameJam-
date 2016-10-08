@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Sol
+  - PickUp
   layers:
   - Default
   - TransparentFX
@@ -38,21 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3563016621
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< HEAD
-  - name: Background
-    uniqueID: 4291633445
-    locked: 0
-  - name: "D\xE9cor arri\xE8re"
-    uniqueID: 2596982623
-    locked: 0
-  - name: Plateforme
-    uniqueID: 1355730499
-    locked: 0
-  - name: "D\xE9cor avant"
-    uniqueID: 2383027499
-    locked: 0
-=======
->>>>>>> f41133caeff3d673484d5e0386321dc118f31e20
