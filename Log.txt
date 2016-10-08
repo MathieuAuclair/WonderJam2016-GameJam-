@@ -2,3 +2,5 @@ Mathieu Auclair - créer le Repo Git
 
 
 Mathieu Auclair - Git Tree Cleaning - Merge All
+
+Mathieu Auclair - Fix Tree
