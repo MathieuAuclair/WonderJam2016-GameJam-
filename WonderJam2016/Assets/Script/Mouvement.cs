@@ -10,8 +10,7 @@ public class Mouvement : MonoBehaviour
     private float axeDeplacement;
     private float axeSaut;
     private Rigidbody2D rigidBody;
-    public bool aTerre;
-    public bool toucheMur;
+    private bool aTerre;
 
     // Use this for initialization
     void Start()
@@ -19,6 +18,7 @@ public class Mouvement : MonoBehaviour
         aTerre = true;
         initialScale = transform.localScale;
         rigidBody = GetComponent<Rigidbody2D>();
+        rigidBody.freezeRotation = true;
     }
 	
 	// Update is called once per frame
@@ -37,15 +37,12 @@ public class Mouvement : MonoBehaviour
     {
         //Gestion déplacement horizontal
         axeDeplacement = Input.GetAxis("Horizontal");
-        if (!toucheMur)
-        {
             rigidBody.AddForce(Vector2.right * 150 * axeDeplacement); //Donne une forte force dans la direction du mouvement
             //Attenuation de la vitesse
             if (rigidBody.velocity.x > vitesseDeplacement)
                 rigidBody.velocity = new Vector2(vitesseDeplacement, rigidBody.velocity.y);
             if (rigidBody.velocity.x < -vitesseDeplacement)
                 rigidBody.velocity = new Vector2(-vitesseDeplacement, rigidBody.velocity.y);
-        }
         //Saut
         axeSaut = Input.GetAxis("Jump");
         if (axeSaut != 0 && aTerre)
@@ -55,29 +52,19 @@ public class Mouvement : MonoBehaviour
     //Gestion de collision
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == "Mur")
-            toucheMur = true;
         if (coll.gameObject.tag == "Sol")
-        {
             aTerre = true;
-            toucheMur = false;
-        }
     }
 
     void OnCollisionStay2D(Collision2D coll)
     {
         if (coll.gameObject.tag == "Sol")
-        {
             aTerre = true;
-            toucheMur = false;
-        }
     }
 
     void OnCollisionExit2D(Collision2D coll)
     {
         if (coll.gameObject.tag == "Sol")
             aTerre = false;
-        if (coll.gameObject.tag == "Mur")
-            toucheMur = false;
     }
 }

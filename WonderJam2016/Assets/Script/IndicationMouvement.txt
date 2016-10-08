@@ -1,0 +1,2 @@
+Appliquer aux sols : un tag "Sol"
+Appliquer à tout : un objet physics2D (Assets -> Physics -> PhysicsMaterial2D) avec une friction à 0
