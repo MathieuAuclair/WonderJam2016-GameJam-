@@ -4,7 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Sol
+=======
+  - PickUp
+>>>>>>> Level_Design
   layers:
   - Default
   - TransparentFX
