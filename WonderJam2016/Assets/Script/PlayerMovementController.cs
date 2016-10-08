@@ -43,7 +43,7 @@ public class PlayerMovementController : MonoBehaviour {
          
 
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.9f, layerPlatform);
-            if ((Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown(KeyCode.UpArrow))&&onGround==true)
+            if ((Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown(KeyCode.UpArrow))&&onGround==true && hit.collider != null)
             {
                 GetComponent<Rigidbody2D>().AddForce(new Vector3(0, puissanceSaut, 0));
                 onGround = false;

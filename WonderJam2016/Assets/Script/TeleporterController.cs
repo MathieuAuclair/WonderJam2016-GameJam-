@@ -3,20 +3,26 @@ using System.Collections;
 
 public class TeleporterController : MonoBehaviour {
 
-    public TeleporterController destination;
+    public GameObject destination;
+    private float timeLeft;
+    private bool tp;
 
-    // Use this for initialization
-    void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	    
-	}
-
-    public void Teleportation ( GameObject obj )
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        obj.transform.position = destination.transform.position;
+        other.transform.position = destination.transform.position;
+        destination.GetComponent<CircleCollider2D>().enabled = false;
+        timeLeft = 2;
+        tp = true;
     }
+
+    public void Update()
+    {
+        if(tp)
+        timeLeft -= Time.deltaTime;
+        if (timeLeft < 0)
+        {
+            destination.GetComponent<CircleCollider2D>().enabled = true;
+        }
+    }
+
 }

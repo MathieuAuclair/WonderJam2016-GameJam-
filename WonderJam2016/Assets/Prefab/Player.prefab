@@ -93,11 +93,11 @@ GameObject:
   - 4: {fileID: 4000012268568632}
   - 212: {fileID: 212000011938565126}
   - 114: {fileID: 114000013367347682}
-  - 95: {fileID: 95000011091345082}
   - 61: {fileID: 61000012145866594}
   - 50: {fileID: 50000011014173610}
   - 114: {fileID: 114000013190692558}
   - 61: {fileID: 61000010409883026}
+  - 95: {fileID: 95000011440003930}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -140,7 +140,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014223800268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.52, y: 0.201, z: 0}
+  m_LocalPosition: {x: -7.52, y: 0.197076, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -203,7 +203,7 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 0
+  m_HDR: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -339,7 +339,7 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013372464844}
   m_Enabled: 1
---- !u!95 &95000011091345082
+--- !u!95 &95000011440003930
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
