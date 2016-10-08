@@ -91,6 +91,7 @@ NavMeshSettings:
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &495349239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,6 +1258,9 @@ Prefab:
 >>>>>>> Sprite_Pack
   m_IsPrefabParent: 0
 >>>>>>> master
+=======
+=======
+>>>>>>> Level_Design
 --- !u!1 &2012174695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,6 +1348,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &2045879374
 GameObject:
@@ -1498,3 +1503,6 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: 80fbb4c76a960ca45b2f22f0284fdfc8, type: 2}
   m_IsPrefabParent: 0
 >>>>>>> master
+=======
+>>>>>>> 20cd26b3a25ec61f716c42df80fbffaa51e8aa6d
+>>>>>>> Level_Design

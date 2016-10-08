@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e3a52b5692a486a43916b0aec9f49d2f
 folderAsset: yes
 timeCreated: 1475887099
+=======
+guid: 87c50ec960659c04d8b0907c5a94bf30
+folderAsset: yes
+timeCreated: 1475889338
+>>>>>>> Level_Design
 licenseType: Free
 DefaultImporter:
   userData: 
