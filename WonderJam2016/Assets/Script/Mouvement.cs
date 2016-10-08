@@ -10,7 +10,7 @@ public class Mouvement : MonoBehaviour
     private float axeDeplacement;
     private float axeSaut;
     private Rigidbody2D rigidBody;
-    private bool aTerre;
+    public bool aTerre;
 
     // Use this for initialization
     void Start()
