@@ -5,6 +5,7 @@ public class Mouvement : MonoBehaviour
 {
     public float vitesseDeplacement = 0.1f; //Vitesse horizontale
     public float hauteurSaut = 150f;
+    public string joueur;
 
     private Vector3 initialScale;
     private float axeDeplacement;
@@ -25,7 +26,7 @@ public class Mouvement : MonoBehaviour
 	void Update ()
     {
         //Orientation du sprite
-        axeDeplacement = Input.GetAxis("Horizontal");
+        axeDeplacement = Input.GetAxis("Deplacement" + joueur);
         if (axeDeplacement > 0) //Bouge vers la droite
             transform.localScale = new Vector3(initialScale.x, initialScale.y, initialScale.z);
         if (axeDeplacement < 0)
@@ -36,7 +37,7 @@ public class Mouvement : MonoBehaviour
     void FixedUpdate()
     {
         //Gestion déplacement horizontal
-        axeDeplacement = Input.GetAxis("Horizontal");
+        axeDeplacement = Input.GetAxis("Deplacement" + joueur);
             rigidBody.AddForce(Vector2.right * 150 * axeDeplacement); //Donne une forte force dans la direction du mouvement
             //Attenuation de la vitesse
             if (rigidBody.velocity.x > vitesseDeplacement)
@@ -44,7 +45,7 @@ public class Mouvement : MonoBehaviour
             if (rigidBody.velocity.x < -vitesseDeplacement)
                 rigidBody.velocity = new Vector2(-vitesseDeplacement, rigidBody.velocity.y);
         //Saut
-        axeSaut = Input.GetAxis("Jump");
+        axeSaut = Input.GetAxis("Saut" + joueur);
         if (axeSaut != 0 && aTerre)
             rigidBody.AddForce(Vector2.up * hauteurSaut);
     }
