@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:WonderJam2016/Assets/Animation.meta
 <<<<<<< HEAD
 guid: e3a52b5692a486a43916b0aec9f49d2f
 folderAsset: yes
@@ -8,6 +9,11 @@ guid: 87c50ec960659c04d8b0907c5a94bf30
 folderAsset: yes
 timeCreated: 1475889338
 >>>>>>> Level_Design
+=======
+guid: acd07cb7a6ddbd74d93f55137f7e635c
+folderAsset: yes
+timeCreated: 1475897853
+>>>>>>> origin/Level_Design:WonderJam2016/Assets/Art/Animations.meta
 licenseType: Free
 DefaultImporter:
   userData: 
