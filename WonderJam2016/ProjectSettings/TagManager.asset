@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Sol
-  - PickUp
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -15,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - platteforme
+  - 
   - 
   - 
   - 
@@ -40,21 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-<<<<<<< HEAD
-  - name: Background
-    uniqueID: 3563016621
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 2371312249
-    locked: 0
-  - name: Collectible
-    uniqueID: 174223813
-    locked: 0
-=======
-  - name: Default
-    uniqueID: 0
-    locked: 0
->>>>>>> origin/Level_Jp
