@@ -90,6 +90,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &416439918
 Prefab:
   m_ObjectHideFlags: 0
@@ -216,3 +217,5 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9971cbb736b096f48bd06cf463184347, type: 2}
   m_IsPrefabParent: 0
+=======
+>>>>>>> origin/Level_Jp
