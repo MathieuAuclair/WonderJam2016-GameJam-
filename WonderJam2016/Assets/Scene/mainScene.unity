@@ -5525,6 +5525,11 @@ Prefab:
       propertyPath: countText
       value: 
       objectReference: {fileID: 585447375}
+    - target: {fileID: 114000010124168112, guid: 5b3aa72055fc61a43a5d2400beea11d6,
+        type: 2}
+      propertyPath: playerNum
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b3aa72055fc61a43a5d2400beea11d6, type: 2}
   m_IsPrefabParent: 0
@@ -5873,6 +5878,11 @@ Prefab:
       propertyPath: countText
       value: 
       objectReference: {fileID: 1940458385}
+    - target: {fileID: 114000010875493184, guid: 9971cbb736b096f48bd06cf463184347,
+        type: 2}
+      propertyPath: playerNum
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9971cbb736b096f48bd06cf463184347, type: 2}
   m_IsPrefabParent: 0
