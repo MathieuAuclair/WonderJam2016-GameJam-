@@ -401,6 +401,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afb3913829d533b4ab7f570dc69f9845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  countText: {fileID: 0}
+  Joueur_Gagnant: 
+  Score_Joueur: 0
 --- !u!114 &114000010875493184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -409,7 +412,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000014014706220}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0be6240e698ac5a41b1c0d3af1fbda0b, type: 3}
+  m_Script: {fileID: 11500000, guid: c52c73b0fd46c244384f0a69272267fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 0.1
@@ -418,7 +421,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   hurtDurationMax: 100
-  playerNum: 2
+  playerNum: 0
 --- !u!114 &114000012970834616
 MonoBehaviour:
   m_ObjectHideFlags: 1

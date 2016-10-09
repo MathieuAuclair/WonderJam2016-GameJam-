@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ScriptIntro : MonoBehaviour {
 
     private int n = 0;
-    private int etape = 0;
+    private int etape = 8;
     private int pause = 0;
 
     private int i = 0;
@@ -97,7 +98,7 @@ public class ScriptIntro : MonoBehaviour {
 
         if (etape == txts.Length + 3)
         {
-            // LIEN VERS L'AUTRE SCENE
+            SceneManager.LoadScene("mainScene");
         }
 
         n++;
