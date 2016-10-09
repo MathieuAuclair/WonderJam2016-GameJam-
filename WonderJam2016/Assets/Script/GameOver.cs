@@ -9,6 +9,7 @@ public class GameOver : MonoBehaviour {
     {
         CameraGameOver.SetActive(false);
     }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         CameraGameOver.SetActive(true);
