@@ -7,8 +7,9 @@ public class PlayerMovementController : MonoBehaviour {
     public int puissanceSaut;
     public LayerMask layerPlatform;
     public int hurtDurationMax;
-    private bool onGround;
+    public int playerNum;
 
+    private bool onGround;
     private bool facingRight = true;
     private bool hurt = false;
     private int hurtDuration;
@@ -32,7 +33,7 @@ public class PlayerMovementController : MonoBehaviour {
         {
             // Déplacement gauche droite
 
-            float move = Input.GetAxisRaw("Horizontal");
+            float move = Input.GetAxisRaw("Horizontal_P"+playerNum);
             anim.SetFloat("speed", Mathf.Abs(move));
             transform.position += new Vector3(move * maxSpeed, 0, 0);
             if ((move > 0 && !facingRight) || (move < 0 && facingRight))
@@ -43,7 +44,7 @@ public class PlayerMovementController : MonoBehaviour {
          
 
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.9f, layerPlatform);
-            if ((Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown(KeyCode.UpArrow))&&onGround==true && hit.collider != null)
+            if (Input.GetButton("Jump_P"+playerNum)&&onGround==true && hit.collider != null)
             {
                 GetComponent<Rigidbody2D>().AddForce(new Vector3(0, puissanceSaut, 0));
                 onGround = false;
