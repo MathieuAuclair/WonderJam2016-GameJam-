@@ -4,25 +4,26 @@ using System.Collections;
 public class TeleporterController : MonoBehaviour {
 
     public GameObject destination;
+    private bool tp = false;
     private float timeLeft;
-    private bool tp;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        destination.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         other.transform.position = destination.transform.position;
-        destination.GetComponent<CircleCollider2D>().enabled = false;
         timeLeft = 2;
         tp = true;
     }
-
-    public void Update()
+    void Update()
     {
-        if(tp)
-        timeLeft -= Time.deltaTime;
-        if (timeLeft < 0)
+        if (tp)
         {
-            destination.GetComponent<CircleCollider2D>().enabled = true;
+            timeLeft -= Time.deltaTime;
+            if (timeLeft < 0)
+            {
+                tp = false;
+                destination.gameObject.GetComponent<CircleCollider2D>().enabled = true;
+            }
         }
     }
-
 }
