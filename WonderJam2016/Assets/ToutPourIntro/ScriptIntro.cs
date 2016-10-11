@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ScriptIntro : MonoBehaviour {
 
     private int n = 0;
-    private int etape = 8;
+    private int etape = 0;
     private int pause = 0;
 
     private int i = 0;
